@@ -24,6 +24,7 @@ public class Proveedor {
 
     @Id
     @GeneratedValue(strategy =  GenerationType.IDENTITY)
+    @Column(name = "id_proveedor")
     private Long id;
 
     @Column(name = "nombre_empresa" )
@@ -34,9 +35,8 @@ public class Proveedor {
     private String email;
     private String nit;
 
-
     @OneToMany(mappedBy = "proveedor")
-    private List<Producto> productos = new ArrayList<>();// es necesario para que es
+    private List<Producto> productos = new ArrayList<>();
 
 
 }

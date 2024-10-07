@@ -1,21 +1,23 @@
 package com.example.gestionfarmacia.persistence.entity;
-/*
--- Tabla de Empleados
-CREATE TABLE Empleados (
-
-        id_empleado INT AUTO_INCREMENT PRIMARY KEY,
-        nombre VARCHAR(100) NOT NULL,
-        apellido VARCHAR(100) NOT NULL,
-        cargo VARCHAR(100) NOT NULL,
-        usuario VARCHAR(50) NOT NULL UNIQUE,
-        contrasena VARCHAR(255) NOT NULL
-
-*/
 
 
 import com.example.gestionfarmacia.persistence.enums.empleadoenums.Cargo;
 import jakarta.persistence.*;
+import lombok.AllArgsConstructor;
+import lombok.Getter;
+import lombok.NoArgsConstructor;
+import lombok.Setter;
 
+
+//Lombok
+@Getter
+@Setter
+@AllArgsConstructor
+@NoArgsConstructor
+
+//JPA
+@Entity
+@Table(name = "clientes")
 public class Empleado {
 
     @GeneratedValue(strategy = GenerationType.IDENTITY)

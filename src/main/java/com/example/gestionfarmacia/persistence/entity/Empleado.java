@@ -8,6 +8,8 @@ import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
 
+import java.util.List;
+
 
 //Lombok
 @Getter
@@ -17,9 +19,10 @@ import lombok.Setter;
 
 //JPA
 @Entity
-@Table(name = "clientes")
+@Table(name = "empleados")
 public class Empleado {
 
+    @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "id_empleado")
     private  Long id;
@@ -34,4 +37,7 @@ public class Empleado {
     private String usuario;
 
     private String contrasena;
+
+    @OneToMany(mappedBy = "empleado")
+    private List<Pedido> pedidos;
 }

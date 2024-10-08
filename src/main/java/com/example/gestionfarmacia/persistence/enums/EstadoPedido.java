@@ -1,4 +1,4 @@
-package com.example.gestionfarmacia.persistence.enums.pedidoenums;
+package com.example.gestionfarmacia.persistence.enums;
 
 public enum EstadoPedido {
 

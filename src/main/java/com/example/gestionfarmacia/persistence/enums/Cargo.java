@@ -1,4 +1,4 @@
-package com.example.gestionfarmacia.persistence.enums.empleadoenums;
+package com.example.gestionfarmacia.persistence.enums;
 
 public enum Cargo {
 

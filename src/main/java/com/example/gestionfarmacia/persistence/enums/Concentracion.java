@@ -1,4 +1,4 @@
-package com.example.gestionfarmacia.persistence.enums.productoenums;
+package com.example.gestionfarmacia.persistence.enums;
 
 import lombok.Getter;
 import lombok.RequiredArgsConstructor;

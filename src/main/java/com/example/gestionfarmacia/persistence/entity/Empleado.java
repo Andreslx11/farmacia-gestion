@@ -1,7 +1,7 @@
 package com.example.gestionfarmacia.persistence.entity;
 
 
-import com.example.gestionfarmacia.persistence.enums.empleadoenums.Cargo;
+import com.example.gestionfarmacia.persistence.enums.Cargo;
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Getter;

@@ -1,8 +1,8 @@
 package com.example.gestionfarmacia.persistence.entity;
 
-import com.example.gestionfarmacia.persistence.enums.productoenums.Categoria;
-import com.example.gestionfarmacia.persistence.enums.productoenums.Concentracion;
-import com.example.gestionfarmacia.persistence.enums.productoenums.Presentacion;
+import com.example.gestionfarmacia.persistence.enums.Categoria;
+import com.example.gestionfarmacia.persistence.enums.Concentracion;
+import com.example.gestionfarmacia.persistence.enums.Presentacion;
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Getter;

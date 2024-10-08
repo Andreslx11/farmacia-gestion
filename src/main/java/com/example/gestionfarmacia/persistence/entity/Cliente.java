@@ -1,7 +1,7 @@
 package com.example.gestionfarmacia.persistence.entity;
 
 
-import com.example.gestionfarmacia.persistence.enums.clienteenums.TipoDocumento;
+import com.example.gestionfarmacia.persistence.enums.TipoDocumento;
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Getter;

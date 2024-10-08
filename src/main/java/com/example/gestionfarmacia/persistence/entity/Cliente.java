@@ -9,20 +9,8 @@ import lombok.NoArgsConstructor;
 import lombok.Setter;
 
 import java.time.LocalDate;
+import java.util.List;
 
-/*
-
-CREATE TABLE `clientes` (
-        `id_cliente` int NOT NULL AUTO_INCREMENT,
-  `nombre` varchar(100) NOT NULL,
-  `apellido` varchar(100) NOT NULL,
-  `tipo_documento` varchar(50) NOT NULL,
-  `numero_documento` varchar(50) NOT NULL,
-  `direccion` varchar(255) DEFAULT NULL,
-  `telefono` varchar(20) NOT NULL,
-  `email` varchar(100) DEFAULT NULL,
-  `fecha_nacimiento` date DEFAULT NULL,
-*/
 
 
 //Lombok
@@ -58,6 +46,9 @@ public class Cliente {
 
     @Column(name = "fecha_nacimiento")
     private LocalDate fechaNacimiento;
+
+    @OneToMany(mappedBy = "cliente")
+    private List<Pedido> pedidos;
 
 
 }
